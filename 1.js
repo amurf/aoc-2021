@@ -23,10 +23,10 @@ function partTwo() {
 
   for (let i = 0; i < inputArray.length - 2; i++) {
     // less efficient but clearer code
-    let previous = sumNextThree(inputArray, i);
-    let current = sumNextThree(inputArray, i + 1);
+    let current = sumNextThree(inputArray, i);
+    let next = sumNextThree(inputArray, i + 1);
 
-    if (current > previous) {
+    if (next > current) {
       increasingCount++;
     }
   }
