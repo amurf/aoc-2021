@@ -43,5 +43,5 @@ function simulateDays(fish, days) {
     fishTracker[8] = newFish;
   }
 
-  return fishTracker.reduce((accum, next) => (accum += next));
+  return fishTracker.reduce((total, val) => (total += val));
 }
